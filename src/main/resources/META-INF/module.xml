@@ -1,0 +1,30 @@
+<!--
+
+    Copyright (C) 2018 The Holodeck B2B Team, Sander Fieten
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Lesser General Public License as published
+    by the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<module name="rest-no-error-content">
+	<Description>Enabling this module ensures that there there will be no HTTP entity bodies generated in the OUT_FAULT_FLOW</Description>
+	<parameter name="HandledMessagingProtocol" locked="true">REST</parameter>
+
+	<OutFaultFlow>
+        <handler name="SetXErrorHeader" class="org.holodeckb2b.axis2.rest.SetHTTPXErrorHeader">
+            <order phase="protocolOutPhase"/>
+        </handler>
+        <handler name="PrepareResponse" class="org.holodeckb2b.axis2.rest.SetMessageFormatter">
+            <order phase="protocolOutPhase"/>
+        </handler>      
+    </OutFaultFlow>
+</module>
