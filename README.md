@@ -4,8 +4,6 @@ Additionally it will set a custom _"X-Error"_ HTTP header that includes the erro
 triggered the error response.
 
 ___
-For more information on using Holodeck B2B visit the website at http://holodeck-b2b.org  
-Lead developer: Sander Fieten  
 Code hosted at https://github.com/holodeck-b2b/axis2-rest-status-only-error.git  
 Issue tracker https://github.com/holodeck-b2b/axis2-rest-status-only-error/issues  
 
