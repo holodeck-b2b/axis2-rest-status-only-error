@@ -9,7 +9,8 @@ Issue tracker https://github.com/holodeck-b2b/axis2-rest-status-only-error/issue
 
 ## Usage
 ### Prerequisites
-This module can be installed in any Axis2 version 1.6 or later running on a JRE 1.6 or later.
+This module can be installed in any Axis2 version 1.6 or later running on a JRE 1.6 or later. The Axis2 configuration
+must define a _MessageOut_ phase in the _OutFaultFlow_.
 
 ### Using
 Just include a reference to this module to enable it for a service:
