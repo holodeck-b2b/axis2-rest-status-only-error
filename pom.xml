@@ -54,7 +54,6 @@
 				<version>${axis2-version}</version>
 				<extensions>true</extensions>
 				<configuration>
-					<marName>axis2-rest-empty-error-${project.version}</marName>
 					<includeDependencies>false</includeDependencies>
 				</configuration>
 			</plugin>
