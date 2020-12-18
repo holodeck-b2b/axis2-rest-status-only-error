@@ -6,7 +6,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ##### 2019-10-03
 ### Changed
 * The phase the handlers run in has been changed to _MessageOut_ to make it more standard
-* Fix issue with module archive name which was not consistent 
+
+### Fixed
+* Issue with module archive name which was not consistent with the Maven artifactId
 
 ## 1.0.0
 ##### 2018-09-03
